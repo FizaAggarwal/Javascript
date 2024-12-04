@@ -1,4 +1,24 @@
-async function retry(asyncFn, retries = 3, delay = 50, finalError = "Failed") {
+/*Question:
+ Retries a promise-returning function N times with a delay between retries.
+ @param {Function} asyncFn - The promise-returning function to be retried.
+ @param {number} retries - Maximum number of retry attempts.
+ @param {number} delay - Delay (in milliseconds) between each retry.
+ @param {string} finalError - The error message to throw if all retries fail.
+ @returns {Promise<any>} - Resolves with the value of the promise or rejects after retries.
+
+async function retry(asyncFn, retries = 3, delay = 50, finalError = "Failed") {}
+
+Example Usage:
+const exampleAsyncFn = async () => {
+  Simulate a random failure with a 50% chance
+};
+
+retry(exampleAsyncFn, 3, 500, "All retries failed")
+.then((result) => console.log(result))
+.catch((err) => console.error(err.message));
+*/
+
+async function retry(asyncFn, retries, delay, finalError) {
   return new Promise(async (resolve, reject) => {
     for (let i = 1; i <= retries; i++) {
       console.log("Retrying ....", i);
