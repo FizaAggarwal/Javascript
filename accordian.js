@@ -51,8 +51,10 @@ array.forEach((value, index) => {
     if (answer) {
       answer.remove();
     }
-    answerIndex = index;
-    displayAnswer(value.answer, index);
+    if (answerIndex !== index) {
+      answerIndex = index;
+      displayAnswer(value.answer, index);
+    }
   });
 
   div.innerHTML = value.question;
