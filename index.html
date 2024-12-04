@@ -3,21 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript Practice</title>
+    <title>JavaScript Practice Hub</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>JavaScript Practice</h1>
-      <div class="output-section">
-        <h2>Output Section</h2>
-        <div id="output"></div>
-      </div>
-      <div class="console-section">
-        <h2>Console Output</h2>
-        <p>Open browser console (F12) to see console.log outputs</p>
+      <header class="welcome-header">
+        <h1>Welcome to JavaScript Practice Hub</h1>
+        <p class="subtitle">Your playground for mastering JavaScript</p>
+      </header>
+
+      <div class="main-content">
+        <div class="console-guide">
+          <h2>🖥️ Start Practicing!</h2>
+          <p>Open Developer Tools Console:</p>
+          <ul>
+            <li>Press <span class="key">F12</span> key</li>
+            <li>
+              Or press <span class="key">Ctrl</span> +
+              <span class="key">Shift</span> +
+              <span class="key">J</span> (Windows)
+            </li>
+            <li>
+              Or press <span class="key">Cmd</span> +
+              <span class="key">Option</span> + <span class="key">J</span> (Mac)
+            </li>
+          </ul>
+        </div>
+
+        <div class="file-instructions">
+          <h2>📝 JavaScript Files:</h2>
+          <ul>
+            <li>Write your code in <span class="file">script.js</span></li>
+            <li>
+              Or create a new .js file and update the script source in this HTML
+              file:
+              <code>&lt;script src="your-file-name.js"&gt;&lt;/script&gt;</code>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <script src="retryAsyncFn.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

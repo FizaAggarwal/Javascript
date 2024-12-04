@@ -5,47 +5,93 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    background-color: #f0f0f0;
 }
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    width: 90%;
     background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-header {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 h1 {
-    color: #333;
-    text-align: center;
-    margin-bottom: 30px;
+    color: #2d3748;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-h2 {
-    color: #444;
+.subtitle {
+    color: #4a5568;
+    font-size: 1.2em;
+}
+
+.console-guide, .file-instructions {
+    background-color: #f7fafc;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 20px;
+}
+
+.console-guide h2, .file-instructions h2 {
+    color: #2d3748;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.console-guide p {
+    color: #4a5568;
     margin-bottom: 15px;
 }
 
-.output-section, .console-section {
-    margin: 20px 0;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+.console-guide ul, .file-instructions ul {
+    list-style: none;
 }
 
-#output {
-    min-height: 100px;
-    padding: 10px;
-    background-color: #f8f8f8;
-    border-radius: 4px;
+.console-guide li, .file-instructions li {
+    margin: 10px 0;
+    color: #4a5568;
 }
 
-.console-section p {
-    color: #666;
-    font-style: italic;
+.key {
+    background-color: #edf2f7;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #4a5568;
+    border: 1px solid #cbd5e0;
+    display: inline-block;
+    font-size: 0.9em;
+}
+
+.file {
+    font-family: monospace;
+    color: #4834d4;
+    font-weight: bold;
+}
+
+code {
+    display: block;
+    background-color: #2d3748;
+    color: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 8px;
+    font-family: monospace;
+    font-size: 0.9em;
 }
