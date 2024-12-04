@@ -29,26 +29,19 @@ let answerIndex = null;
 
 const getDivForQuestion = (question) => {
   const index = array.findIndex((value) => value.question === question);
-
   const div = document.createElement("div");
   div.id = `${index}`;
-  div.style.width = "100%";
-  div.style.background = "red";
-  div.style.color = "white";
-
   return div;
 };
 
 const displayAnswer = (answer, index) => {
   const div = document.createElement("div");
   div.id = `answer-${index}`;
-  div.style.width = "100%";
-  div.style.background = "green";
-  div.style.color = "white";
   div.innerHTML = answer;
-
   document.getElementById(answerIndex).appendChild(div);
 };
+
+const accordianContainer = document.getElementById("accordian");
 
 array.forEach((value, index) => {
   const div = getDivForQuestion(value.question);
@@ -63,6 +56,5 @@ array.forEach((value, index) => {
   });
 
   div.innerHTML = value.question;
-
-  document.body.appendChild(div);
+  accordianContainer.appendChild(div);
 });
